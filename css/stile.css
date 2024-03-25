@@ -1,5 +1,6 @@
 /* COMMON RULES  */
 *{
+    font-family: "Roboto", sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -16,10 +17,39 @@
     margin: auto;
  }
 
+img{
+   width: 100%;
+}
+
+i{
+   font-size: 75px;
+}
+
  .debug{
    background-color: pink;
    border: 2px dashed green;
  }
+
+.cont .button{
+   background-color: #0084FD;
+   border-radius: 50px;
+   border: none;
+   width: 90%;
+   margin: 2rem 0;
+   padding: 0;
+   color: white;
+   font-size: 1.3rem;
+   text-align: center;
+}
+.button i{
+   font-size: 20px;
+}
+section{
+   margin: 3rem 0;
+}
+span{
+   font-size: 20px;
+}
 
 /******************************** header *********************************/
 
@@ -35,7 +65,14 @@ header{
 .card{
    min-height: 20rem;
    margin: 1rem;
-
+   background-color: #B5DDFF;
+   border-radius: 30px;
+   line-height: 1.6rem;
+   color: rgb(83, 83, 83);
+   font-weight: 600;
+}
+.card h2, .card i{
+   color: #0084FD;
 }
 .long{
    width: 100%;
@@ -43,44 +80,85 @@ header{
    flex-direction: column;
 }
 .cont{
-   padding: 1rem;
+   padding: 0rem;
    /* width: 50%; */
 }
 .cont *,.little *{
-   padding: 1rem 0;
+   padding: 1.5rem 0;
 }
 .col{
    background-color: aquamarine;
    border: 2px dashed red;
-
-   height: 20rem;
+   min-height: 10rem;
+   position: relative;
+   
 }
-.img-jumbo{
-   background-color: purple;
-   border: 2px dashed violet;
-   height: 100%;
-   width: 80%;
-   margin: auto;
-}
-
 .little{
    text-align: center;
-   padding: 1rem;
+   padding: 1.5rem;
 }
 
 .img{
    display: inline-block;
    background-color: purple;
    border: 2px dashed violet;
-   width: 100px;
-   height: 100px;
 }
 
 /* section planning */
-
-.woman{
-   
+.short{
+   max-width: 960px;
 }
+.strategic{
+   background-color: #9793E4;
+   min-height: 10rem;
+}
+.woman{
+   color: white;
+}
+.strategic h2{
+   font-size: 35px;
+}
+.woman-img{
+   padding: 30px;
+}
+.woman h2{
+   margin: 70px 0;
+}
+.woman .cont{
+   padding: 30px;
+   line-height: 1.5rem;
+   width: 100%;
+}
+
+.man{
+   background-color: white;
+   padding: 10px;
+   margin: 30px;
+   border-radius: 50px;
+   text-align: center;
+}
+.man span{
+   font-style: oblique;
+}
+.man i{
+   font-size: 15px;
+   background-color: #9793E4;
+   border-radius: 60px;
+   padding: 19px 23px;
+}
+.man-img{
+   margin: 30px;
+}
+.cont-man{
+   width: auto;
+}
+.cont-man *{
+   padding: 10px 0;
+}
+
+
+
+
 
 
 
@@ -102,6 +180,15 @@ header{
    .col{
       width: 50%;
    }
+   span{
+      font-size: 15px;
+   }
+   .strategic h2{
+      font-size: 50px;
+   }
+   .strategic span{
+      font-size: 33px;
+   }
 
 
 @media screen and (min-width: 768px){
@@ -111,11 +198,33 @@ header{
    .long{
       flex-direction: row;
    }
-   /* .col{
-      width: 50%;
-   } */
    .cont{
       width: 50%;
+   }
+   .col img{
+      vertical-align: -300px;
+   }
+   span{
+      font-size: 15px;
+   }
+   .strategic h2{
+      font-size: 33px;
+   }
+   .strategic span{
+      font-size: 23px;
+   }
+   .woman{
+      width: calc(50% - 40px);
+   }
+   .man{
+      width: calc(50% - 40px);
+      margin-top: 200px;
+   }
+   .col img{
+      vertical-align: -405px;
+   }
+   .cont-man{
+      width: auto;
    }
 }
 }
