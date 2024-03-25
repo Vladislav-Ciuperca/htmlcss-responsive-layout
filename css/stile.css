@@ -1,12 +1,121 @@
- *{
+/* COMMON RULES  */
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
  }
+ .boxed{
+    background-color: lightblue;
+    min-height: 3rem;
 
- header{
-    background-color: #0084FD;
+    max-width: 1140px;
+    width: auto;
+    margin: auto;
+    flex-wrap: wrap;
     display: flex;
-    justify-content: space-between;
-    padding: 1rem 2rem;
+    margin: auto;
  }
+
+ .debug{
+   background-color: pink;
+   border: 2px dashed green;
+ }
+
+/******************************** header *********************************/
+
+header{
+   background-color: #0084FD;
+   display: flex;
+   justify-content: space-between;
+   padding: 1rem 2rem;
+}
+
+/******************************** main *********************************/
+/* section 1 */
+.card{
+   min-height: 20rem;
+   margin: 1rem;
+
+}
+.long{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.cont{
+   padding: 1rem;
+   /* width: 50%; */
+}
+.cont *,.little *{
+   padding: 1rem 0;
+}
+.col{
+   background-color: aquamarine;
+   border: 2px dashed red;
+
+   height: 20rem;
+}
+.img-jumbo{
+   background-color: purple;
+   border: 2px dashed violet;
+   height: 100%;
+   width: 80%;
+   margin: auto;
+}
+
+.little{
+   text-align: center;
+   padding: 1rem;
+}
+
+.img{
+   display: inline-block;
+   background-color: purple;
+   border: 2px dashed violet;
+   width: 100px;
+   height: 100px;
+}
+
+/* section planning */
+
+.woman{
+   
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 480px){
+
+   header{
+      background-color: rgb(68, 0, 255);
+   }
+   .long{
+      width: calc(66% - 2rem);
+   }
+   .little{
+      width: calc(33% - 2rem);
+   }
+   .col{
+      width: 50%;
+   }
+
+
+@media screen and (min-width: 768px){
+   header{
+      background-color: red;
+   }
+   .long{
+      flex-direction: row;
+   }
+   /* .col{
+      width: 50%;
+   } */
+   .cont{
+      width: 50%;
+   }
+}
+}
