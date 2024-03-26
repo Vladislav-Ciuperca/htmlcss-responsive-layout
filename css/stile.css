@@ -36,19 +36,25 @@ i{
    border: none;
    width: 90%;
    margin: 2rem 0;
-   padding: 0;
+   padding: 15px;
    color: white;
    font-size: 1.3rem;
    text-align: center;
 }
-.button i{
+.button>i{
    font-size: 20px;
+   color: white;
 }
 section{
    margin: 3rem 0;
 }
 span{
    font-size: 20px;
+   line-height: 35px;
+}
+
+.cards span{
+   line-height: 15px;
 }
 
 /******************************** header *********************************/
@@ -67,12 +73,15 @@ header{
    margin: 1rem;
    background-color: #B5DDFF;
    border-radius: 30px;
-   line-height: 1.6rem;
+   line-height: 30px;
    color: rgb(83, 83, 83);
    font-weight: 600;
 }
-.card h2, .card i{
+.card h2, .card>i{
    color: #0084FD;
+}
+.card h2{
+   font-size: 35px;
 }
 .long{
    width: 100%;
@@ -80,10 +89,10 @@ header{
    flex-direction: column;
 }
 .cont{
-   padding: 0rem;
+   padding: 1rem;
    /* width: 50%; */
 }
-.cont *,.little *{
+.cont>*,.little *{
    padding: 1.5rem 0;
 }
 .col{
@@ -116,13 +125,13 @@ header{
    color: white;
 }
 .strategic h2{
-   font-size: 35px;
+   font-size: 30px;
 }
 .woman-img{
    padding: 30px;
 }
 .woman h2{
-   margin: 70px 0;
+   margin: 50px 0;
 }
 .woman .cont{
    padding: 30px;
@@ -144,7 +153,8 @@ header{
    font-size: 15px;
    background-color: #9793E4;
    border-radius: 60px;
-   padding: 19px 23px;
+   padding: 15px 17px;
+   margin-top: 15px;
 }
 .man-img{
    margin: 30px;
@@ -155,7 +165,56 @@ header{
 .cont-man *{
    padding: 10px 0;
 }
+/*************** testimonials **********************/
+.testimonials{
+   display: block;
+   text-align: center;
+}
+.testimonials>*{
+   margin: 30px;
+   background-color: pink;
+   border: 2px dashed green;
+}
 
+.testi-intro *{
+   padding-bottom: 20px;
+}
+.testi-intro div{
+   font-size: 20px;
+}
+.testi-intro h2{
+   font-size: 40px;
+   color: #9793E4;
+}
+.testi-intro span{
+   font-size: 25px;
+}
+/* '------------------' */
+.testi-cont i{
+   font-size: 25px;
+}
+.testi-cont{
+   font-size: 26px;
+   display: block;
+}
+.testi-card h2{
+   padding: 25px 0;
+}
+.testi-card{
+   color: white;
+}
+/* '------------------' */
+.testi-img{
+   background-color: purple;
+   border: 2px dashed pink;
+   margin: 20px;
+   width: 250px;
+   height: 250px;
+   display: inline-block;
+}
+.testi-img img{
+   width: 100%;
+}
 
 
 
@@ -183,14 +242,21 @@ header{
    span{
       font-size: 15px;
    }
+/*************** strategic **********************/
    .strategic h2{
       font-size: 50px;
    }
    .strategic span{
-      font-size: 33px;
+      font-size: 16px;
    }
+   .cont-man h2{
+      font-size: 25px;
+   }
+/*************** testimonials **********************/
 
 
+
+   
 @media screen and (min-width: 768px){
    header{
       background-color: red;
@@ -206,12 +272,17 @@ header{
    }
    span{
       font-size: 15px;
+      line-height: normal;
    }
+   .card h2{
+      font-size: 20px;
+   }
+/*************** strategic **********************/
    .strategic h2{
-      font-size: 33px;
+      font-size: 30px;
    }
    .strategic span{
-      font-size: 23px;
+      font-size: 20px;
    }
    .woman{
       width: calc(50% - 40px);
@@ -226,5 +297,7 @@ header{
    .cont-man{
       width: auto;
    }
+/*************** testimonials **********************/
+
 }
 }
